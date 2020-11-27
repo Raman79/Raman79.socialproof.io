@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  font-size: 15px;
+  background: url("../images/bg-pattern-bottom-mobile.svg");
+  background-image: url("../images/bg-pattern-top-desktop.svg"), no-repeat;
+}
+
+.header {
+  font-size: 16px;
+  text-align: center;
+  width: 60%;
+  position: absolute;
+  top: 90px;
+  left: 100px;
+  height: 100px;
+  font-weight: 700;
+  color: #502050;
+}
+
+.para {
+  position: absolute;
+  top: 270px;
+  text-align: center;
+  width: 350px;
+  left: 75px;
+  line-height: 2.5em;
+  opacity: 0.9;
+}
+
+.stars {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 480px;
+  border-radius: 10px;
+}
+
+.stars .star1,
+.stars .star2,
+.stars .star3 {
+  background: #f7f2f7;
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+  line-height: 2em;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.stars img {
+  margin-left: 5px;
+}
+
+.cards .card1,
+.cards .card2,
+.cards .card3 {
+  width: 80%;
+  height: 40vh;
+  position: relative;
+  left: 50px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  background-color: #502050;
+}
+
+.cards .name,
+.cards .vb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  bottom: 5px;
+  left: 3px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.cards img {
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+  top: 45px;
+  left: 50px;
+  height: 60px;
+  width: 60px;
+}
+
+.cards p {
+  width: 80%;
+  line-height: 1.5em;
+  margin-left: 50px;
+  margin-top: 40px;
+  color: white;
+  font-weight: 300;
+}
+
+.cards .card1 {
+  margin-top: 60px;
+}
+
+.cards .vb {
+  color: #ee68a4;
+}
+
+@media screen and (min-width: 1000px) {
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 20%;
+    text-align: start;
+  }
+  .para {
+    width: 60vh;
+    position: relative;
+    top: 270px;
+    left: 60px;
+    text-align: start;
+    line-height: 1.5em;
+    margin-left: 20px;
+  }
+  .stars {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    position: relative;
+    left: 700px;
+    bottom: 450px;
+    display: block;
+    width: 50%;
+  }
+  .stars .star1,
+  .stars .star2,
+  .stars .star3 {
+    height: 5px;
+    width: 400px;
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 30px;
+  }
+  .stars .star2 {
+    position: relative;
+    left: 100px;
+  }
+  .stars .star3 {
+    position: relative;
+    left: 150px;
+  }
+  p {
+    margin-left: 15px;
+  }
+  .cards {
+    width: 100%;
+    height: 10vh;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: relative;
+    bottom: 350px;
+    left: 10px;
+  }
+  .cards .card1 {
+    border: 2px solid black;
+    width: 30%;
+    margin-right: 20px;
+  }
+  .cards .card2 {
+    width: 30%;
+    position: relative;
+    top: 150px;
+  }
+  .cards .card3 {
+    margin-left: 40px;
+    width: 30%;
+    position: relative;
+    top: 250px;
+  }
+  body {
+    background: url("../images/bg-pattern-bottom-desktop.svg"), no-repeat;
+  }
+}
+/*# sourceMappingURL=main.css.map */

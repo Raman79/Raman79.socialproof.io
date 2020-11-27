@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+$magenta: hsl(300, 43%, 22%);
+$pink: hsl(333, 80%, 67%);
+$darkmagenta: hsl(303, 10%, 53%);
+$lightmagenta: hsl(300, 24%, 96%);
+$white: hsl(0, 0%, 100%);
+$weight1: 300;
+$weight2: 500;
+$weight3: 700;
+
+body {
+  font-family: "Spartan", sans-serif;
+  font-size: 15px;
+  background: url("../images/bg-pattern-bottom-mobile.svg");
+  background-image: url("../images/bg-pattern-top-desktop.svg"), no-repeat;
+}
+.header {
+  font-size: 16px;
+  text-align: center;
+  width: 60%;
+  position: absolute;
+  top: 90px;
+  left: 100px;
+  height: 100px;
+  font-weight: $weight3;
+  color: $magenta;
+}
+.para {
+  position: absolute;
+  top: 270px;
+  text-align: center;
+  width: 350px;
+  left: 75px;
+  line-height: 2.5em;
+  opacity: 0.9;
+}
+.stars {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 480px;
+  border-radius: 10px;
+  .star1,
+  .star2,
+  .star3 {
+    background: $lightmagenta;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    line-height: 2em;
+    margin-bottom: 20px;
+    font-weight: $weight2;
+  }
+  img {
+    margin-left: 5px;
+  }
+}
+.cards {
+  .card1,
+  .card2,
+  .card3 {
+    width: 80%;
+    height: 40vh;
+    position: relative;
+    left: 50px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    background-color: $magenta;
+  }
+  .name,
+  .vb {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 5px;
+    left: 3px;
+    padding-bottom: 10px;
+    color: $white;
+  }
+  img {
+    border-radius: 50%;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    top: 45px;
+    left: 50px;
+    height: 60px;
+    width: 60px;
+  }
+  p {
+    width: 80%;
+    line-height: 1.5em;
+    margin-left: 50px;
+    margin-top: 40px;
+    color: $white;
+    font-weight: $weight1;
+  }
+  .card1 {
+    margin-top: 60px;
+  }
+  .vb {
+    color: $pink;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .header {
+    display: flex;
+    align-items: flex-start;
+    width: 20%;
+    text-align: start;
+  }
+  .para {
+    width: 60vh;
+    position: relative;
+    top: 270px;
+    left: 60px;
+    text-align: start;
+    line-height: 1.5em;
+    margin-left: 20px;
+  }
+  .stars {
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+    left: 700px;
+    bottom: 450px;
+    display: block;
+    width: 50%;
+    .star1,
+    .star2,
+    .star3 {
+      height: 5px;
+      width: 400px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    .star2 {
+      position: relative;
+      left: 100px;
+    }
+    .star3 {
+      position: relative;
+      left: 150px;
+    }
+  }
+  p {
+    margin-left: 15px;
+  }
+  .cards {
+    width: 100%;
+    height: 10vh;
+    display: inline-flex;
+    flex-direction: row;
+    position: relative;
+    bottom: 350px;
+    left: 10px;
+    .card1 {
+      border: 2px solid black;
+      width: 30%;
+      margin-right: 20px;
+    }
+    .card2 {
+      width: 30%;
+      position: relative;
+      top: 150px;
+    }
+    .card3 {
+      margin-left: 40px;
+      width: 30%;
+      position: relative;
+      top: 250px;
+    }
+  }
+  body {
+    background: url("../images/bg-pattern-bottom-desktop.svg"), no-repeat;
+  }
+}
